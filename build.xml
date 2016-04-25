@@ -1,0 +1,97 @@
+<project name="ImageProvider" default="proguard" basedir=".">  
+    <description>  
+        building ${ant.project.name}!  
+    </description>  
+  <!-- set global properties for this build -->
+  <property name="src.dir" location="src"/>  
+  <property name="gen.dir" location="gen"/>
+  <property name="libs.dir" location="libs" />
+  <property name="compile.out" location="bin"/>  
+  <property name="compile.out.classes" location="${compile.out}/classes"/>
+  
+  <property name="java.source" value="1.6"/>
+  <property name="java.target" value="1.6"/>
+  <property name="java.encoding" value="-encoding UTF-8"/>
+  <property name="java.debug" value="true"/>
+  <property name="java.debug.level" value= "source,lines,vars"/>
+  
+  <property name="obfuscate.dir" value="${basedir}/proguard"/>
+  
+  <property environment="env" />
+  <condition property="sdk.dir" value="${env.ANDROID_HOME}">
+    <isset property="env.ANDROID_HOME" />
+  </condition>
+  
+  <loadproperties srcFile="project.properties" />
+  <property name="path_android_jar" value="${sdk.dir}/platforms/${target}/android.jar"/>
+  
+  <path id="depend.lib.classpath">
+	<pathelement location="${path_android_jar}" />
+	<fileset dir="${libs.dir}">
+		<include name="**/*.jar"/>
+	</fileset>
+  </path>  
+
+  <target name="init" depends="clean">
+	<echo level="info">the sdk pat=${sdk.dir}.</echo>
+    <!-- Create the time stamp -->  
+    <tstamp>
+		<format property="current.time" pattern="yyyyMMddHmmss" />
+	</tstamp>  
+    <!-- Create the classes directory structure used by compile -->  
+    <mkdir dir="${compile.out}"/>  	
+	<mkdir dir="${compile.out.classes}"/>
+  </target>  
+  
+  <target name="compile" depends="init"  description="compile the source code" >  
+    <!-- Compile the java code from ${src} into ${build} -->
+    <javac destdir="${compile.out.classes}" deprecation="true" includeantruntime="false"
+			source="${java.source}" target="${java.target}" debug="${java.debug}" debuglevel="${java.debug.level}" >  
+		<compilerarg line="${java.encoding}"/>
+		<classpath refid="depend.lib.classpath" />
+		<src path="${src.dir}" />
+		<src path="${gen.dir}" />
+		<exclude name="com/test/**" />
+	</javac>
+  </target>  
+  
+  <target name="jar" depends="compile" 
+        description="generate the distribution" >
+    <!-- Put everything in ${build} into the MyProject-${DSTAMP}.jar file -->  
+	<jar destfile="${compile.out}/${ant.project.name}-${current.time}.jar" basedir="${compile.out.classes}">
+  </jar>    
+ </target> 
+
+  <target name="proguard" depends="jar">
+	<echo level="info">obfuscate the output jar file.</echo>
+	<taskdef resource="proguard/ant/task.properties" classpath="${sdk.dir}/tools/proguard/lib/proguard.jar" />
+	<mkdir dir="${obfuscate.dir}"/>
+	<proguard>
+		-include "${basedir}/proguard.cfg"
+		-injars '${compile.out}/${ant.project.name}-${current.time}.jar'
+		-outjars '${compile.out}/${ant.project.name}.jar'
+		-libraryjars '${java.home}/lib/rt.jar'
+		-libraryjars '${path_android_jar}'
+		-libraryjars '${libs.dir}'
+
+		-optimizationpasses 3  
+		-overloadaggressively  		
+		
+		-keepparameternames
+		-renamesourcefileattribute SourceFile
+		-keepattributes Exceptions,InnerClasses,Signature,Deprecated,
+                SourceFile,LineNumberTable,*Annotation*,EnclosingMethod
+		
+		-dump         "${obfuscate.dir}/dump.txt"
+        -printseeds   "${obfuscate.dir}/seeds.txt"
+        -printusage   "${obfuscate.dir}/usage.txt"
+        -printmapping "${obfuscate.dir}/mapping.txt"
+	</proguard>
+	<delete file="${compile.out}/${ant.project.name}-${current.time}.jar"/>
+  </target>
+  
+  <target name="clean"  
+        description="clean up" >
+    <delete dir="${compile.out}"/>
+  </target>  
+</project>  

@@ -1,0 +1,382 @@
+com.qiyi.imageprovider.BuildConfig
+com.qiyi.imageprovider.R
+com.qiyi.imageprovider.R$attr
+com.qiyi.imageprovider.R$dimen
+com.qiyi.imageprovider.R$drawable
+com.qiyi.imageprovider.R$id
+com.qiyi.imageprovider.R$layout
+com.qiyi.imageprovider.R$menu
+com.qiyi.imageprovider.R$string
+com.qiyi.imageprovider.R$style
+com.qiyi.imageprovider.base.ImageRequest:
+    199:203:private static java.lang.String getObjectDescription(java.lang.Object)
+com.qiyi.imageprovider.cocos2d.CocosHttpTask:
+    private static final java.lang.String TAG_S
+    protected static final int CONN_TIMEOUT
+    protected static final int READ_TIMEOUT
+    protected static final int RETRY_CONN_TIMEOUT
+    protected static final int RETRY_READ_TIMEOUT
+    protected static final int TOTAL_RETRY_COUNT
+    private static final long serialVersionUID
+    95:97:public void deprecate()
+    100:100:public boolean isEquals(java.lang.String)
+    104:104:public boolean isEquals(com.qiyi.imageprovider.base.ImageRequest)
+com.qiyi.imageprovider.cocos2d.LastCocosHttpTask:
+    private static final long serialVersionUID
+com.qiyi.imageprovider.logic.ImageProvider:
+    private static final java.lang.String TAG
+    223:223:public boolean getEnableScale()
+com.qiyi.imageprovider.logic.ParamsUtils:
+    10:10:public ParamsUtils()
+com.qiyi.imageprovider.logic.TaskLoader:
+    private static final java.lang.String TAG
+    223:223:public boolean isPingbackPermit()
+com.qiyi.imageprovider.logic.ThreadPool:
+    private static final java.lang.String TAG
+com.qiyi.imageprovider.logic.cache.CacheFile:
+    private static final java.lang.String TAG
+    private static final java.lang.String CACHE_PATH
+    private static final java.lang.String NORMAL_PATH
+    private static final java.lang.String LASTING_PATH
+    private static final java.lang.String BASE_CACHE_PATH
+    private static final java.lang.String DEFAULT_PKG_NAME
+    private static final int FILES_QUEUE_SIZE_DEFAULT
+    private static final int FILES_QUEUE_SIZE_LASTING_DEFAULT
+    private static final int REMOVE_TAIO
+com.qiyi.imageprovider.logic.task.HttpTask:
+    private static final java.lang.String TAG_S
+    protected static final int CONN_TIMEOUT
+    protected static final int READ_TIMEOUT
+    protected static final int RETRY_CONN_TIMEOUT
+    protected static final int RETRY_READ_TIMEOUT
+    protected static final int TOTAL_RETRY_COUNT
+    private static final long serialVersionUID
+com.qiyi.imageprovider.logic.task.ITaskStatusListener:
+    public abstract void onImageLoadTimedOut()
+com.qiyi.imageprovider.logic.task.LastHttpTask:
+    private static final long serialVersionUID
+com.qiyi.imageprovider.logic.task.NoMemoryHttpTask
+com.qiyi.imageprovider.logic.task.NormalHttpTask:
+    private static final long serialVersionUID
+com.qiyi.imageprovider.logic.task.OnlyFileHttpTask:
+    private static final long serialVersionUID
+com.qiyi.imageprovider.logic.task.OnlyWebHttpTask:
+    private static final java.lang.String TAG
+    private static final long serialVersionUID
+com.qiyi.imageprovider.logic.task.PriorityHttpTask:
+    private static final long serialVersionUID
+com.qiyi.imageprovider.model.RecordResult
+com.qiyi.imageprovider.model.USAException:
+    private static final long serialVersionUID
+    public static final java.lang.String PARAMS_ERROR
+    public static final java.lang.String TASK_CANCEL
+    public static final java.lang.String COUNT_TOO_MUCH
+    public static final java.lang.String REQUEST_FAIL
+com.qiyi.imageprovider.model.WaitingQueue:
+    22:31:public synchronized com.qiyi.imageprovider.base.ImageRequest getSameTask(java.lang.String)
+com.qiyi.imageprovider.pingback.ImagePingback:
+    private static final java.lang.String TAG
+    76:76:public void onImageLoadTimedOut()
+com.qiyi.imageprovider.util.BitmapTool:
+    private static final java.lang.String TAG
+    27:360:public BitmapTool()
+    121:121:public static android.graphics.Bitmap createBitmap(byte[],int,int,com.qiyi.imageprovider.base.ImageRequest$ScaleType)
+    132:132:public static android.graphics.Bitmap createBitmap(java.lang.String)
+    164:164:public static android.graphics.Bitmap createBitmap(java.io.InputStream)
+    268:297:public static varargs android.graphics.Bitmap clipToRoundCorners(android.graphics.Bitmap,com.qiyi.imageprovider.util.CornerSpecUtils$CornerSpec[])
+    313:332:private static varargs com.qiyi.imageprovider.util.CornerSpecUtils$CornerSpec[] processInputSpecs(com.qiyi.imageprovider.util.CornerSpecUtils$CornerSpec[])
+    337:365:private static void drawRoundCorneredMask(android.graphics.Canvas,android.graphics.Paint,android.graphics.RectF,float,com.qiyi.imageprovider.util.CornerSpecUtils$Corner)
+    368:381:private static void fillExclusiveRect(android.graphics.Canvas,android.graphics.Paint,android.graphics.RectF,android.graphics.RectF)
+    384:407:private static android.graphics.RectF getQuarterRect(android.graphics.RectF,com.qiyi.imageprovider.util.CornerSpecUtils$Corner)
+com.qiyi.imageprovider.util.BitmapTool$1
+com.qiyi.imageprovider.util.ContextUtils:
+    private static final java.lang.String TAG
+    private static final java.lang.String DEFAULT_MAC_ADDR
+    40:46:public void initialize(android.content.Context,java.lang.String)
+    49:49:public java.lang.String getEtherMac()
+    53:53:public java.lang.String getWifiMac()
+    70:70:private static java.lang.String getMd5UpperedFormatMacAddr(java.lang.String)
+com.qiyi.imageprovider.util.DebugOptions:
+    private static final java.lang.String DBGOPT_POOL
+    private static final java.lang.String DBGOPT_IMAGE_DECODE_PRIORITY
+    private static final java.lang.String DBGOPT_LOG
+    private static final java.lang.String DBGOPT_ENABLE_URL_SUFFIX
+    private static final java.lang.String DBGOPT_ENABLE_MEM_CACHE
+    private static final java.lang.String DBGOPT_ENABLE_FILE_CACHE
+    17:17:private DebugOptions()
+    28:28:public static boolean isPoolEnabled()
+com.qiyi.imageprovider.util.FileTool:
+    private static final java.lang.String TAG
+    private static final java.lang.String SPACE
+    15:15:private FileTool()
+    81:88:public static long getSDFreeSize()
+    95:100:public static long getSDTotalSize()
+com.qiyi.imageprovider.util.LogUtils:
+    9:9:private LogUtils()
+    35:35:public static int i(java.lang.String,java.lang.String)
+    39:39:public static int i(java.lang.String,java.lang.String,java.lang.Throwable)
+com.qiyi.imageprovider.util.StringUtils:
+    17:17:public StringUtils()
+    45:55:public static varargs boolean hasEmpty(java.lang.String[])
+    65:71:public static int parseInt(java.lang.String)
+    81:87:public static long parseLong(java.lang.String)
+    98:115:public static java.lang.String md5(java.lang.String)
+    119:123:public static java.lang.String replaceBlank(java.lang.String)
+    133:153:public static java.lang.String md5MultScreen(java.lang.String)
+    157:164:public static java.lang.String formatLongToTimeStr(java.lang.Long)
+    175:188:public static java.lang.String stringForTime(int,boolean)
+    194:194:public static java.lang.String stringForTime(int)
+    198:198:public static java.lang.String filterSuffix(java.lang.String)
+    213:218:public static boolean isMailAddress(java.lang.String)
+    222:229:public static boolean checkPassword(java.lang.String)
+    233:238:public static boolean isMobileNO(java.lang.String)
+    242:242:public static boolean equals(java.lang.CharSequence,java.lang.CharSequence)
+    247:255:public static boolean isBlank(java.lang.CharSequence)
+    259:259:public static java.lang.String[] split(java.lang.String,java.lang.String)
+    264:341:private static java.lang.String[] splitWorker(java.lang.String,java.lang.String,int,boolean)
+com.qiyi.imageprovider.util.SysUtils:
+    private static final java.lang.String TAG
+    16:16:public SysUtils()
+com.qiyi.imageprovider.util.UrlTool:
+    private static final java.lang.String TAG
+    private static final java.lang.String URL_SUFFIX_HEADER
+    11:11:private UrlTool()
+com.qiyi.imageprovider.util.exif.ByteBufferInputStream
+com.qiyi.imageprovider.util.exif.CountedDataInputStream:
+    120:122:public long readLong()
+    126:128:public java.lang.String readString(int)
+com.qiyi.imageprovider.util.exif.ExifData:
+    private static final java.lang.String TAG
+    62:62:protected byte[] getCompressedThumbnail()
+    76:76:protected boolean hasCompressedThumbnail()
+    97:97:protected int getStripCount()
+    106:106:protected byte[] getStrip(int)
+    113:113:protected boolean hasUncompressedStrip()
+    120:120:protected java.nio.ByteOrder getByteOrder()
+    147:152:protected com.qiyi.imageprovider.util.exif.IfdData getOrCreateIfdData(int)
+    169:173:protected com.qiyi.imageprovider.util.exif.ExifTag addTag(com.qiyi.imageprovider.util.exif.ExifTag)
+    181:185:protected com.qiyi.imageprovider.util.exif.ExifTag addTag(com.qiyi.imageprovider.util.exif.ExifTag,int)
+    189:191:protected void clearThumbnailAndStrips()
+    197:199:protected void removeThumbnailData()
+    205:210:protected void removeTag(short,int)
+    217:247:protected java.lang.String getUserComment()
+    256:270:protected java.util.List getAllTags()
+    278:293:protected java.util.List getAllTagsForIfd(int)
+    301:313:protected java.util.List getAllTagsForTagId(short)
+com.qiyi.imageprovider.util.exif.ExifInterface:
+    public static final int TAG_NULL
+    public static final int IFD_NULL
+    public static final int DEFINITION_NULL
+    private static final java.lang.String NULL_ARGUMENT_STRING
+    private static final java.lang.String GPS_DATE_FORMAT_STR
+    private static final java.lang.String DATETIME_FORMAT_STR
+    757:769:public void readExif(java.lang.String)
+    778:780:public void setExif(java.util.Collection)
+    786:787:public void clearExif()
+    799:805:public void writeExif(byte[],java.io.OutputStream)
+    817:823:public void writeExif(android.graphics.Bitmap,java.io.OutputStream)
+    835:841:public void writeExif(java.io.InputStream,java.io.OutputStream)
+    855:868:public void writeExif(byte[],java.lang.String)
+    882:895:public void writeExif(android.graphics.Bitmap,java.lang.String)
+    909:922:public void writeExif(java.io.InputStream,java.lang.String)
+    936:948:public void writeExif(java.lang.String,java.lang.String)
+    962:967:public java.io.OutputStream getExifWriterStream(java.io.OutputStream)
+    983:993:public java.io.OutputStream getExifWriterStream(java.lang.String)
+    1012:1052:public boolean rewriteExif(java.lang.String,java.util.Collection)
+    1069:1077:public boolean rewriteExif(java.nio.ByteBuffer,java.util.Collection)
+    1097:1120:public void forceRewriteExif(java.lang.String,java.util.Collection)
+    1133:1134:public void forceRewriteExif(java.lang.String)
+    1142:1142:public java.util.List getAllTags()
+    1155:1155:public java.util.List getTagsForTagId(short)
+    1168:1168:public java.util.List getTagsForIfdId(int)
+    1191:1192:public com.qiyi.imageprovider.util.exif.ExifTag getTag(int)
+    1201:1202:public java.lang.Object getTagValue(int,int)
+    1214:1215:public java.lang.Object getTagValue(int)
+    1227:1231:public java.lang.String getTagStringValue(int,int)
+    1238:1239:public java.lang.String getTagStringValue(int)
+    1246:1250:public java.lang.Long getTagLongValue(int,int)
+    1257:1258:public java.lang.Long getTagLongValue(int)
+    1284:1288:public java.lang.Byte getTagByteValue(int,int)
+    1295:1296:public java.lang.Byte getTagByteValue(int)
+    1303:1307:public com.qiyi.imageprovider.util.exif.Rational getTagRationalValue(int,int)
+    1314:1315:public com.qiyi.imageprovider.util.exif.Rational getTagRationalValue(int)
+    1322:1326:public long[] getTagLongValues(int,int)
+    1333:1334:public long[] getTagLongValues(int)
+    1352:1353:public int[] getTagIntValues(int)
+    1360:1364:public byte[] getTagByteValues(int,int)
+    1371:1372:public byte[] getTagByteValues(int)
+    1379:1383:public com.qiyi.imageprovider.util.exif.Rational[] getTagRationalValues(int,int)
+    1390:1391:public com.qiyi.imageprovider.util.exif.Rational[] getTagRationalValues(int)
+    1401:1406:public boolean isTagCountDefined(int)
+    1417:1421:public int getDefinedTagCount(int)
+    1434:1438:public int getActualTagCount(int,int)
+    1464:1468:public short getDefinedTagType(int)
+    1498:1512:public com.qiyi.imageprovider.util.exif.ExifTag buildTag(int,int,java.lang.Object)
+    1523:1524:public com.qiyi.imageprovider.util.exif.ExifTag buildTag(int,java.lang.Object)
+    1528:1537:protected com.qiyi.imageprovider.util.exif.ExifTag buildUninitializedTag(int)
+    1552:1556:public boolean setTagValue(int,int,java.lang.Object)
+    1569:1570:public boolean setTagValue(int,java.lang.Object)
+    1583:1583:public com.qiyi.imageprovider.util.exif.ExifTag setTag(com.qiyi.imageprovider.util.exif.ExifTag)
+    1594:1597:public void setTags(java.util.Collection)
+    1606:1607:public void deleteTag(int,int)
+    1615:1617:public void deleteTag(int)
+    1635:1673:public int setTagDefinition(short,int,short,short,int[])
+    1677:1677:protected int getTagDefinition(short,int)
+    1681:1695:protected int[] getTagDefinitionsForTagId(short)
+    1699:1702:protected int getTagDefinitionForTag(com.qiyi.imageprovider.util.exif.ExifTag)
+    1706:1730:protected int getTagDefinitionForTag(short,short,int,int)
+    1739:1740:public void removeTagDefinition(int)
+    1746:1747:public void resetTagDefinitions()
+    1755:1761:public android.graphics.Bitmap getThumbnailBitmap()
+    1772:1777:public byte[] getThumbnailBytes()
+    1786:1786:public byte[] getThumbnail()
+    1795:1795:public boolean isThumbnailCompressed()
+    1805:1805:public boolean hasThumbnail()
+    1818:1820:public boolean setCompressedThumbnail(byte[])
+    1831:1835:public boolean setCompressedThumbnail(android.graphics.Bitmap)
+    1842:1843:public void removeCompressedThumbnail()
+    1852:1852:public java.lang.String getUserComment()
+    1861:1872:public static short getOrientationValueForRotation(int)
+    1911:1920:public static double convertLatOrLongToDouble(com.qiyi.imageprovider.util.exif.Rational[],java.lang.String)
+    1933:1944:public double[] getLatLongAsDoubles()
+    1965:1976:public boolean addDateTimeStampTag(int,long,java.util.TimeZone)
+    1987:2002:public boolean addGpsTags(double,double)
+    2012:2027:public boolean addGpsDateTimeStampTag(long)
+    2032:2038:private static com.qiyi.imageprovider.util.exif.Rational[] toExifLatLong(double)
+    2044:2050:private void doExifStreamIO(java.io.InputStream,java.io.OutputStream)
+    2053:2060:protected static void closeSilently(java.io.Closeable)
+    2351:2368:protected static int[] getAllowedIfdsFromInfo(int)
+    2400:2400:protected static short getTypeFromInfo(int)
+    2404:2404:protected static int getComponentCountFromInfo(int)
+com.qiyi.imageprovider.util.exif.ExifInterface$ColorSpace
+com.qiyi.imageprovider.util.exif.ExifInterface$ComponentsConfiguration
+com.qiyi.imageprovider.util.exif.ExifInterface$Compression
+com.qiyi.imageprovider.util.exif.ExifInterface$Contrast
+com.qiyi.imageprovider.util.exif.ExifInterface$ExposureMode
+com.qiyi.imageprovider.util.exif.ExifInterface$ExposureProgram
+com.qiyi.imageprovider.util.exif.ExifInterface$FileSource
+com.qiyi.imageprovider.util.exif.ExifInterface$Flash
+com.qiyi.imageprovider.util.exif.ExifInterface$GainControl
+com.qiyi.imageprovider.util.exif.ExifInterface$GpsAltitudeRef
+com.qiyi.imageprovider.util.exif.ExifInterface$GpsDifferential
+com.qiyi.imageprovider.util.exif.ExifInterface$GpsLatitudeRef
+com.qiyi.imageprovider.util.exif.ExifInterface$GpsLongitudeRef
+com.qiyi.imageprovider.util.exif.ExifInterface$GpsMeasureMode
+com.qiyi.imageprovider.util.exif.ExifInterface$GpsSpeedRef
+com.qiyi.imageprovider.util.exif.ExifInterface$GpsStatus
+com.qiyi.imageprovider.util.exif.ExifInterface$GpsTrackRef
+com.qiyi.imageprovider.util.exif.ExifInterface$LightSource
+com.qiyi.imageprovider.util.exif.ExifInterface$MeteringMode
+com.qiyi.imageprovider.util.exif.ExifInterface$Orientation
+com.qiyi.imageprovider.util.exif.ExifInterface$PhotometricInterpretation
+com.qiyi.imageprovider.util.exif.ExifInterface$PlanarConfiguration
+com.qiyi.imageprovider.util.exif.ExifInterface$ResolutionUnit
+com.qiyi.imageprovider.util.exif.ExifInterface$Saturation
+com.qiyi.imageprovider.util.exif.ExifInterface$SceneCapture
+com.qiyi.imageprovider.util.exif.ExifInterface$SceneType
+com.qiyi.imageprovider.util.exif.ExifInterface$SensingMethod
+com.qiyi.imageprovider.util.exif.ExifInterface$Sharpness
+com.qiyi.imageprovider.util.exif.ExifInterface$SubjectDistance
+com.qiyi.imageprovider.util.exif.ExifInterface$WhiteBalance
+com.qiyi.imageprovider.util.exif.ExifInterface$YCbCrPositioning
+com.qiyi.imageprovider.util.exif.ExifModifier
+com.qiyi.imageprovider.util.exif.ExifModifier$TagOffset
+com.qiyi.imageprovider.util.exif.ExifOutputStream
+com.qiyi.imageprovider.util.exif.ExifParser:
+    private static final boolean LOGV
+    private static final java.lang.String TAG
+    public static final int EVENT_START_OF_IFD
+    public static final int EVENT_NEW_TAG
+    public static final int EVENT_VALUE_OF_REGISTERED_TAG
+    public static final int EVENT_COMPRESSED_IMAGE
+    public static final int EVENT_UNCOMPRESSED_STRIP
+    public static final int EVENT_END
+    public static final int OPTION_IFD_0
+    public static final int OPTION_IFD_1
+    public static final int OPTION_IFD_EXIF
+    public static final int OPTION_IFD_GPS
+    public static final int OPTION_IFD_INTEROPERABILITY
+    public static final int OPTION_THUMBNAIL
+    protected static final int EXIF_HEADER
+    protected static final short EXIF_HEADER_TAIL
+    protected static final short LITTLE_ENDIAN_TAG
+    protected static final short BIG_ENDIAN_TAG
+    protected static final short TIFF_HEADER_TAIL
+    protected static final int TAG_SIZE
+    protected static final int OFFSET_SIZE
+    protected static final int DEFAULT_IFD0_OFFSET
+    private int mStripCount
+    241:241:protected static com.qiyi.imageprovider.util.exif.ExifParser parse(java.io.InputStream,int,com.qiyi.imageprovider.util.exif.ExifInterface)
+    439:439:protected int getTagCountInCurrentIfd()
+    472:472:protected int getStripCount()
+    790:790:protected int getOffsetToExifEndFromSOF()
+    794:794:protected int getTiffStartPosition()
+    801:801:protected int read(byte[],int,int)
+com.qiyi.imageprovider.util.exif.ExifReader:
+    private static final java.lang.String TAG
+com.qiyi.imageprovider.util.exif.ExifTag:
+    public static final short TYPE_UNSIGNED_BYTE
+    public static final short TYPE_ASCII
+    public static final short TYPE_UNSIGNED_SHORT
+    public static final short TYPE_UNSIGNED_LONG
+    public static final short TYPE_UNSIGNED_RATIONAL
+    public static final short TYPE_UNDEFINED
+    public static final short TYPE_LONG
+    public static final short TYPE_RATIONAL
+    private static final int UNSIGNED_SHORT_MAX
+    private static final long UNSIGNED_LONG_MAX
+    private static final long LONG_MAX
+    private static final long LONG_MIN
+    static final int SIZE_UNDEFINED
+    271:271:public boolean setValue(int)
+    308:308:public boolean setValue(long)
+    395:395:public boolean setValue(com.qiyi.imageprovider.util.exif.Rational)
+    442:442:public boolean setValue(byte)
+    458:513:public boolean setValue(java.lang.Object)
+    528:530:public boolean setTimeValue(long)
+    541:548:public java.lang.String getValueAsString()
+    560:564:public java.lang.String getValueAsString(java.lang.String)
+    575:578:public byte[] getValueAsBytes()
+    591:595:public byte getValueAsByte(byte)
+    606:609:public com.qiyi.imageprovider.util.exif.Rational[] getValueAsRationals()
+    622:626:public com.qiyi.imageprovider.util.exif.Rational getValueAsRational(com.qiyi.imageprovider.util.exif.Rational)
+    640:641:public com.qiyi.imageprovider.util.exif.Rational getValueAsRational(long)
+    675:679:public int getValueAsInt(int)
+    690:693:public long[] getValueAsLongs()
+    706:710:public long getValueAsLong(long)
+    717:717:public java.lang.Object getValue()
+    729:741:public long forceGetValueAsLong(long)
+    805:809:protected java.lang.String getString()
+    816:816:protected byte[] getStringByte()
+    826:830:protected com.qiyi.imageprovider.util.exif.Rational getRational(int)
+    837:838:protected void getBytes(byte[])
+    851:857:protected void getBytes(byte[],int,int)
+com.qiyi.imageprovider.util.exif.ExifTool:
+    private static final java.lang.String TAG
+    8:8:public ExifTool()
+com.qiyi.imageprovider.util.exif.IfdData:
+    91:91:protected boolean checkCollision(short)
+    98:99:protected void removeTag(short)
+    112:113:protected void setOffsetToNextIfd(int)
+    119:119:protected int getOffsetToNextIfd()
+com.qiyi.imageprovider.util.exif.IfdId
+com.qiyi.imageprovider.util.exif.JpegHeader:
+    public static final short SOI
+    public static final short APP1
+    public static final short APP0
+    public static final short EOI
+    public static final short SOF0
+    public static final short SOF15
+    public static final short DHT
+    public static final short JPG
+    public static final short DAC
+    19:19:JpegHeader()
+com.qiyi.imageprovider.util.exif.OrderedDataOutputStream
+com.qiyi.imageprovider.util.exif.Rational:
+    42:45:public Rational(com.qiyi.imageprovider.util.exif.Rational)
+    66:66:public double toDouble()
+com.qiyi.imageprovider.util.exif.SimpleExifReader
+com.qiyi.test.App
+com.qiyi.test.App$1
+com.qiyi.test.App$1$1
+com.qiyi.test.App$PerformanceProfiler

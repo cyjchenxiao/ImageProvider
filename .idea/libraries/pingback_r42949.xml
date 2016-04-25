@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="pingback-r42949">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/pingback-r42949.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

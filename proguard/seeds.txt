@@ -1,0 +1,117 @@
+com.qiyi.imageprovider.ImageProviderApi
+com.qiyi.imageprovider.ImageProviderApi: ImageProviderApi()
+com.qiyi.imageprovider.ImageProviderApi: com.qiyi.imageprovider.base.IImageProvider getImageProvider()
+com.qiyi.imageprovider.ImageProviderApi: void setChacheFile(boolean)
+com.qiyi.imageprovider.base.IFileCallback
+com.qiyi.imageprovider.base.IFileCallback: void onSuccess(com.qiyi.imageprovider.base.ImageRequest,java.lang.String)
+com.qiyi.imageprovider.base.IFileCallback: void onFailure(com.qiyi.imageprovider.base.ImageRequest,java.lang.Exception)
+com.qiyi.imageprovider.base.IImageCallback
+com.qiyi.imageprovider.base.IImageCallback: void onSuccess(com.qiyi.imageprovider.base.ImageRequest,android.graphics.Bitmap)
+com.qiyi.imageprovider.base.IImageCallback: void onFailure(com.qiyi.imageprovider.base.ImageRequest,java.lang.Exception)
+com.qiyi.imageprovider.base.IImageProvider
+com.qiyi.imageprovider.base.IImageProvider: void initialize(android.content.Context)
+com.qiyi.imageprovider.base.IImageProvider: void initialize(android.content.Context,java.lang.String)
+com.qiyi.imageprovider.base.IImageProvider: void openSmoothmode(int)
+com.qiyi.imageprovider.base.IImageProvider: void setThreadPriority(int)
+com.qiyi.imageprovider.base.IImageProvider: void closeSmoothmode()
+com.qiyi.imageprovider.base.IImageProvider: void loadImage(com.qiyi.imageprovider.base.ImageRequest,com.qiyi.imageprovider.base.IImageCallback)
+com.qiyi.imageprovider.base.IImageProvider: void loadImage(com.qiyi.imageprovider.base.ImageRequest,com.qiyi.imageprovider.cocos2d.ICocosCallback)
+com.qiyi.imageprovider.base.IImageProvider: void loadImageFromWeb(com.qiyi.imageprovider.base.ImageRequest,com.qiyi.imageprovider.base.IImageCallback)
+com.qiyi.imageprovider.base.IImageProvider: void loadImages(java.util.List,com.qiyi.imageprovider.base.IImageCallback)
+com.qiyi.imageprovider.base.IImageProvider: void loadImages(java.util.List,com.qiyi.imageprovider.cocos2d.ICocosCallback)
+com.qiyi.imageprovider.base.IImageProvider: void loadImagePriority(com.qiyi.imageprovider.base.ImageRequest,com.qiyi.imageprovider.base.IImageCallback)
+com.qiyi.imageprovider.base.IImageProvider: void loadFile(com.qiyi.imageprovider.base.ImageRequest,com.qiyi.imageprovider.base.IFileCallback)
+com.qiyi.imageprovider.base.IImageProvider: void loadFiles(java.util.List,com.qiyi.imageprovider.base.IFileCallback)
+com.qiyi.imageprovider.base.IImageProvider: void loadImageFromFile(com.qiyi.imageprovider.base.ImageRequest,com.qiyi.imageprovider.base.IImageCallback)
+com.qiyi.imageprovider.base.IImageProvider: void stopTask(java.lang.String)
+com.qiyi.imageprovider.base.IImageProvider: void stopTask(com.qiyi.imageprovider.base.ImageRequest)
+com.qiyi.imageprovider.base.IImageProvider: void stopAllTasks()
+com.qiyi.imageprovider.base.IImageProvider: void recycleBitmap(java.lang.String)
+com.qiyi.imageprovider.base.IImageProvider: void delete(java.lang.String)
+com.qiyi.imageprovider.base.IImageProvider: java.lang.String getLocalPath(com.qiyi.imageprovider.base.ImageRequest)
+com.qiyi.imageprovider.base.IImageProvider: void setEnableScale(boolean)
+com.qiyi.imageprovider.base.IImageProvider: void setEnableDebugLog(boolean)
+com.qiyi.imageprovider.base.IImageProvider: void setEnableFastSave(boolean)
+com.qiyi.imageprovider.base.IImageProvider: boolean isEnableFastSave()
+com.qiyi.imageprovider.base.IImageProvider: void setEnableFullPathCacheKey(boolean)
+com.qiyi.imageprovider.base.IImageProvider: boolean isEnableFullPathCacheKey()
+com.qiyi.imageprovider.base.IImageProvider: void setDecodeConfig(android.graphics.Bitmap$Config)
+com.qiyi.imageprovider.base.IImageProvider: void setCacheMode(com.qiyi.imageprovider.logic.CacheMode)
+com.qiyi.imageprovider.base.IImageProvider: void setFileCacheSize(int)
+com.qiyi.imageprovider.base.IImageProvider: void setPingbackIsPermit(boolean)
+com.qiyi.imageprovider.base.ImageRequest
+com.qiyi.imageprovider.base.ImageRequest: ImageRequest(java.lang.String)
+com.qiyi.imageprovider.base.ImageRequest: ImageRequest(java.lang.String,java.lang.Object)
+com.qiyi.imageprovider.base.ImageRequest: void setLasting(boolean)
+com.qiyi.imageprovider.base.ImageRequest: java.lang.String getUrl()
+com.qiyi.imageprovider.base.ImageRequest: java.lang.Object getCookie()
+com.qiyi.imageprovider.base.ImageRequest: boolean isLasting()
+com.qiyi.imageprovider.base.ImageRequest: void setSavePath(java.lang.String)
+com.qiyi.imageprovider.base.ImageRequest: java.lang.String getSavePath()
+com.qiyi.imageprovider.base.ImageRequest: void setImageType(com.qiyi.imageprovider.base.ImageRequest$ImageType)
+com.qiyi.imageprovider.base.ImageRequest: com.qiyi.imageprovider.base.ImageRequest$ImageType getImageType()
+com.qiyi.imageprovider.base.ImageRequest: void setScaleType(com.qiyi.imageprovider.base.ImageRequest$ScaleType)
+com.qiyi.imageprovider.base.ImageRequest: com.qiyi.imageprovider.base.ImageRequest$ScaleType getScaleType()
+com.qiyi.imageprovider.base.ImageRequest: void setRadius(float)
+com.qiyi.imageprovider.base.ImageRequest: float getRadius()
+com.qiyi.imageprovider.base.ImageRequest: int getTargetWidth()
+com.qiyi.imageprovider.base.ImageRequest: void setTargetWidth(int)
+com.qiyi.imageprovider.base.ImageRequest: int getTargetHeight()
+com.qiyi.imageprovider.base.ImageRequest: void setTargetHeight(int)
+com.qiyi.imageprovider.base.ImageRequest: void setDecodeConfig(android.graphics.Bitmap$Config)
+com.qiyi.imageprovider.base.ImageRequest: android.graphics.Bitmap$Config getDecodeConfig()
+com.qiyi.imageprovider.base.ImageRequest: boolean isArbitraryDecodeConfig()
+com.qiyi.imageprovider.base.ImageRequest: com.qiyi.imageprovider.model.RequestQueue getSameTaskQueue()
+com.qiyi.imageprovider.base.ImageRequest: boolean getShouldBeKilled()
+com.qiyi.imageprovider.base.ImageRequest: void setShouldBeKilled(boolean)
+com.qiyi.imageprovider.base.ImageRequest: boolean equals(java.lang.Object)
+com.qiyi.imageprovider.base.ImageRequest: java.lang.String toString()
+com.qiyi.imageprovider.base.ImageRequest: boolean checkRequestValid(com.qiyi.imageprovider.base.ImageRequest)
+com.qiyi.imageprovider.base.ImageRequest$ImageType
+com.qiyi.imageprovider.base.ImageRequest$ImageType: com.qiyi.imageprovider.base.ImageRequest$ImageType DEFAULT
+com.qiyi.imageprovider.base.ImageRequest$ImageType: com.qiyi.imageprovider.base.ImageRequest$ImageType RECT
+com.qiyi.imageprovider.base.ImageRequest$ImageType: com.qiyi.imageprovider.base.ImageRequest$ImageType ROUND
+com.qiyi.imageprovider.base.ImageRequest$ImageType: com.qiyi.imageprovider.base.ImageRequest$ImageType[] $VALUES
+com.qiyi.imageprovider.base.ImageRequest$ImageType: com.qiyi.imageprovider.base.ImageRequest$ImageType[] values()
+com.qiyi.imageprovider.base.ImageRequest$ImageType: com.qiyi.imageprovider.base.ImageRequest$ImageType valueOf(java.lang.String)
+com.qiyi.imageprovider.base.ImageRequest$ImageType: ImageRequest$ImageType(java.lang.String,int)
+com.qiyi.imageprovider.base.ImageRequest$ImageType: void <clinit>()
+com.qiyi.imageprovider.base.ImageRequest$ScaleType
+com.qiyi.imageprovider.base.ImageRequest$ScaleType: com.qiyi.imageprovider.base.ImageRequest$ScaleType DEFAULT
+com.qiyi.imageprovider.base.ImageRequest$ScaleType: com.qiyi.imageprovider.base.ImageRequest$ScaleType CENTER_INSIDE
+com.qiyi.imageprovider.base.ImageRequest$ScaleType: com.qiyi.imageprovider.base.ImageRequest$ScaleType CENTER_CROP
+com.qiyi.imageprovider.base.ImageRequest$ScaleType: com.qiyi.imageprovider.base.ImageRequest$ScaleType[] values()
+com.qiyi.imageprovider.base.ImageRequest$ScaleType: com.qiyi.imageprovider.base.ImageRequest$ScaleType valueOf(java.lang.String)
+com.qiyi.imageprovider.cocos2d.ICocosCallback
+com.qiyi.imageprovider.cocos2d.ICocosCallback: void onSuccess(com.qiyi.imageprovider.base.ImageRequest,java.lang.String)
+com.qiyi.imageprovider.cocos2d.ICocosCallback: void onFailure(com.qiyi.imageprovider.base.ImageRequest,java.lang.Exception)
+com.qiyi.imageprovider.logic.CacheMode
+com.qiyi.imageprovider.logic.CacheMode: com.qiyi.imageprovider.logic.CacheMode CACHE_FIRST
+com.qiyi.imageprovider.logic.CacheMode: com.qiyi.imageprovider.logic.CacheMode DATA_FIRST
+com.qiyi.imageprovider.logic.CacheMode: com.qiyi.imageprovider.logic.CacheMode[] $VALUES
+com.qiyi.imageprovider.logic.CacheMode: com.qiyi.imageprovider.logic.CacheMode[] values()
+com.qiyi.imageprovider.logic.CacheMode: com.qiyi.imageprovider.logic.CacheMode valueOf(java.lang.String)
+com.qiyi.imageprovider.logic.CacheMode: CacheMode(java.lang.String,int)
+com.qiyi.imageprovider.logic.CacheMode: void <clinit>()
+com.qiyi.imageprovider.util.CornerSpecUtils
+com.qiyi.imageprovider.util.CornerSpecUtils: CornerSpecUtils()
+com.qiyi.imageprovider.util.CornerSpecUtils: void sortAsc(com.qiyi.imageprovider.util.CornerSpecUtils$CornerSpec[])
+com.qiyi.imageprovider.util.CornerSpecUtils$Corner
+com.qiyi.imageprovider.util.CornerSpecUtils$Corner: com.qiyi.imageprovider.util.CornerSpecUtils$Corner TOP_LEFT
+com.qiyi.imageprovider.util.CornerSpecUtils$Corner: com.qiyi.imageprovider.util.CornerSpecUtils$Corner TOP_RIGHT
+com.qiyi.imageprovider.util.CornerSpecUtils$Corner: com.qiyi.imageprovider.util.CornerSpecUtils$Corner BOTTOM_LEFT
+com.qiyi.imageprovider.util.CornerSpecUtils$Corner: com.qiyi.imageprovider.util.CornerSpecUtils$Corner BOTTOM_RIGHT
+com.qiyi.imageprovider.util.CornerSpecUtils$Corner: java.lang.String mDescription
+com.qiyi.imageprovider.util.CornerSpecUtils$Corner: com.qiyi.imageprovider.util.CornerSpecUtils$Corner[] $VALUES
+com.qiyi.imageprovider.util.CornerSpecUtils$Corner: com.qiyi.imageprovider.util.CornerSpecUtils$Corner[] values()
+com.qiyi.imageprovider.util.CornerSpecUtils$Corner: com.qiyi.imageprovider.util.CornerSpecUtils$Corner valueOf(java.lang.String)
+com.qiyi.imageprovider.util.CornerSpecUtils$Corner: CornerSpecUtils$Corner(java.lang.String,int,java.lang.String)
+com.qiyi.imageprovider.util.CornerSpecUtils$Corner: java.lang.String getDescription()
+com.qiyi.imageprovider.util.CornerSpecUtils$Corner: void <clinit>()
+com.qiyi.imageprovider.util.CornerSpecUtils$CornerSpec
+com.qiyi.imageprovider.util.CornerSpecUtils$CornerSpec: com.qiyi.imageprovider.util.CornerSpecUtils$Corner mCorner
+com.qiyi.imageprovider.util.CornerSpecUtils$CornerSpec: float mRadius
+com.qiyi.imageprovider.util.CornerSpecUtils$CornerSpec: CornerSpecUtils$CornerSpec(com.qiyi.imageprovider.util.CornerSpecUtils$Corner,float)
+com.qiyi.imageprovider.util.CornerSpecUtils$CornerSpec: com.qiyi.imageprovider.util.CornerSpecUtils$Corner getCorner()
+com.qiyi.imageprovider.util.CornerSpecUtils$CornerSpec: float getRadius()
+com.qiyi.imageprovider.util.CornerSpecUtils$CornerSpec: java.lang.String toString()
