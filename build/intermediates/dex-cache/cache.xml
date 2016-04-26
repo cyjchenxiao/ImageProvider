@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/cyj/Documents/iQIYI/ImageProvider/libs/pingback-r42949.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="2cc51da940f03aa4605d4269cd5914264049d88f">
+        <dex dex="/Users/cyj/Documents/iQIYI/ImageProvider/build/intermediates/pre-dexed/debug/pingback-r42949-32b16baaee325a55c51d4be2be944f804a8db558.jar" />
+    </item>
+    <item
+        jar="/Users/cyj/Documents/iQIYI/ImageProvider/libs/apiengine-r25126.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3063faa4f24c6df81b1d2391527b0e9d10ef12c5">
+        <dex dex="/Users/cyj/Documents/iQIYI/ImageProvider/build/intermediates/pre-dexed/debug/apiengine-r25126-fb246aaa25964ef4db0d6451080149572621712b.jar" />
+    </item>
+    <item
+        jar="/Users/cyj/Documents/iQIYI/ImageProvider/libs/QiyiUtils_r23443.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="67e75e91c55e5818cb6bc637a52942c503bd0979">
+        <dex dex="/Users/cyj/Documents/iQIYI/ImageProvider/build/intermediates/pre-dexed/debug/QiyiUtils_r23443-b58e2a9c1884610ff41b1fae5e99b3de2c0e2fdc.jar" />
+    </item>
+    <item
+        jar="/Users/cyj/Documents/iQIYI/ImageProvider/libs/tvapi-r26470.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8811bba02d3c37fa7651ab16161e211f5c486f4d">
+        <dex dex="/Users/cyj/Documents/iQIYI/ImageProvider/build/intermediates/pre-dexed/debug/tvapi-r26470-8d72793bb1d370881ec72aebe266bce00cd4c76e.jar" />
+    </item>
+
+</items>
